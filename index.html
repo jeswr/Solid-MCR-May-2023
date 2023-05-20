@@ -1,126 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>On the horizon: What is Solid today, and where are we headed?</title>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-  <link rel="stylesheet" href="styles/screen-16x10.css">
-  <link rel="stylesheet" href="styles/custom.css">
-</head>
-<body class="shower list">
-  <header class="caption">
-    <h1>On the horizon:<br> What is Solid today, and where are we headed?</h1>
-    <p>
-      <a href="https://www.jeswr.org/#me">Jesse Wright</a>,
-      <a href="https://www.inrupt.com/">Inrupt</a>
-    </p>
-  </header>
+  <head>
+    <title>On the horizon: What is Solid today, and where are we headed?</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <link rel="stylesheet" href="styles/screen-16x10.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>
+        On the horizon:<br />
+        What is Solid today, and where are we headed?
+      </h1>
+      <p>
+        <a href="https://www.jeswr.org/#me">Jesse Wright</a>,
+        <a href="https://www.inrupt.com/">Inrupt</a>
+      </p>
+    </header>
 
-  <div class="title slide" id="title">
-    <h2>On the horizon:</h2>
-    <h3>What is Solid today,<br/> and where are we headed?</h3>
-    <p class="author">Jesse Wright</p>
-  </div>
+    <div class="title slide" id="title">
+      <a href="https://solidproject.org/">
+        <!-- https://solidproject.org/assets/img/solid-emblem.svg -->
+        <img
+          href="https://solidproject.org/"
+          class="right-align"
+          src="https://solidproject.org/assets/img/solid-emblem.svg"
+          alt="Solid Project"
+          width="25%"
+        />
+      </a>
+      <h2>On the horizon:</h2>
+      <h3>
+        What is Solid today,<br />
+        and where are we headed?
+      </h3>
+      <p class="author"><a href="https://www.jeswr.org/#me">Jesse Wright</a></p>
+    </div>
 
-  <div class="slide" id="me">
-    <h2>
-        About Me
-    </h2>
-    <ul>
-      <li>
-        Built some <i>Semantic Web</i> applications
-      </li>
-      <li>
-        Built some <i>RDF Reasoners</i> for the Web
-      </li>
-      <li>
-        Working on Solid @ Inrupt
-      </li>
-      <li>
-        Will also be working on Solid with the EWADA Team @ Oxford
-      </li>
-    </ul>
-  </div>
+    <div class="slide" id="me">
+      <h2>About Me</h2>
+      <ul>
+        <li>
+          Built some
+          <a href="https://www.scientificamerican.com/article/the-semantic-web/"
+            ><i>Semantic Web</i></a
+          >
+          applications @ <a href="https://www.anu.edu.au/">ANU</a>
+        </li>
+        <li>
+          Built some
+          <a href="https://github.com/eyereasoner/eye-js/"
+            ><i>RDF Reasoners</i></a
+          >
+          for the Web @ <a href="https://www.anu.edu.au/">ANU</a>
+        </li>
+        <li>
+          Built Solid Apps @ <a href="https://sii.anu.edu.au/">ANU SII</a>
+        </li>
+        <li>
+          Working on Solid @ <a href="https://www.inrupt.com/">Inrupt</a> and
+          with <a href="https://solidlab.be/">SolidLab</a>
+        </li>
+        <li>
+          Will also work on Solid with
+          <a href="https://ewada.ox.ac.uk/">EWADA</a> Team @ Oxford
+        </li>
+      </ul>
+    </div>
 
-  <div class="slide" id="disclaimer">
-    <h2>
+    <div class="slide" id="disclaimer">
+      <h2>
         ⚠️
         <em>Disclaimer</em>
-    </h2>
-    <ul>
-      <li>
-        Opinions expressed here are my own.<br>
-        <ul>
-          <li>
-            They do not necessarily reflect the current roadmap of any organisations I am affiliated with.
-          </li>
-        </ul>
-      </li>
-      <li class="next">
-        I am not the editor of the spec.<br>
-        <ul>
-          <li>
-            This presentation serves as a position statement, and is not an official statement of the Solid spec.
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+      </h2>
+      <ul>
+        <li>
+          Opinions expressed here are my own.<br />
+          <ul>
+            <li>
+              They do not necessarily reflect the current roadmap of any
+              organisations I am affiliated with.
+            </li>
+          </ul>
+        </li>
+        <li class="next">
+          I am not the editor of the spec.<br />
+          <ul>
+            <li>
+              This presentation serves as a position statement, and is not an
+              official statement of the Solid spec.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-  <div class="slide" id="today">
-    <h2>
-        What is Solid today?
-    </h2>
-    <ul>
-      <li>
-        LDP
-        <ul>
-          <li>
-          </li>
-        </ul>
-      </li>
-      <li class="next">
-        Authorisation (ACP / WAC)<br>
-        <ul>
-          <li>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <div class="slide" id="today">
+      <!-- <h2>What is Solid today?</h2> -->
+      <h2>A Solid foundation: What do we have today?</h2>
+      <ul>
+        <li>
+          LDP "a file system for the Web"
+          <ul>
+            <li>Uses HTTP(S)</li>
+            <li>Performs CRUD operations on resources (documents)</li>
+            <li>Resources can be RDF & non-RDF</li>
+            <li>Resources are organised in containers (folders)</li>
+          </ul>
+        </li>
+        <li class="next">
+          Authorisation (ACP / WAC)<br />
+          <ul>
+            <li>
+              Permission agents & applications to read, write, append and delete
+              resources
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-  <div class="slide" id="call-to-action">
-    <h2>
-        How can you help?
-    </h2>
-    <ul>
-      <li>
-        Applications
-        <ul>
-          <li>
-          </li>
-        </ul>
-      </li>
-      <li class="next">
-        Shapes
-        <ul>
-          <li>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+    <div class="slide" id="today-possibilities-browser">
+      <h2>What can Solid do today?</h2>
+      <ul>
+        <li>
+          File Browsers
+          <ul>
+            <li>
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=jeswr.solidfs"
+              >
+                <img
+                  src="https://code.visualstudio.com/favicon.ico"
+                  height="40"
+                />
+                SolidFS
+              </a>
+            </li>
+            <li>
+              <a href="https://podpro.dev/">
+                <svg
+                  height="40"
+                  class="h-10 inline"
+                  viewBox="0 0 352 322"
+                  xmlns="http://www.w3.org/2000/svg"
+                  alt="solid-logo"
+                >
+                  <g fill-rule="nonzero" fill="none">
+                    <path
+                      d="M87.97296 282.3527L27.24133 177.02207c-5.62041-9.75765-5.62041-21.77908 0-31.53674L87.97296 40.2328c5.64643-9.78367 16.08061-15.79439 27.32143-15.79439h121.3852c11.26684 0 21.72704 6.01072 27.32143 15.7944l60.75765 105.30458c5.62041 9.75766 5.62041 21.77909 0 31.53674l-60.73163 105.33061c-5.64643 9.78367-16.08061 15.79439-27.32143 15.79439H115.37245c-11.31888-.05204-21.72704-6.08878-27.3995-15.84643z"
+                      fill="#FFF"
+                    ></path>
+                    <path
+                      d="M93.15102 275.19708l-57.1148-99.0597c-5.30816-9.1852-5.30816-20.50408 0-29.66326l57.1148-99.08572c5.33418-9.21122 15.14388-14.85765 25.73418-14.85765h114.2296c10.5903 0 20.42602 5.64643 25.73418 14.85765l57.16684 99.03368c5.30816 9.1852 5.30816 20.50408 0 29.66326L258.875 275.2231c-5.33418 9.21122-15.14388 14.85765-25.73418 14.85765H118.93724c-10.64234 0-20.45204-5.67245-25.78622-14.88367z"
+                      fill="#7C4DFF"
+                    ></path>
+                    <path
+                      d="M118.46888 142.2328h117.53418c1.48316 0 2.65408-1.19695 2.65408-2.65409v-22.03928c0-14.6495-11.89132-26.54085-26.54081-26.54085h-70.56735c-20.5301-.026-37.15722 16.60105-37.15722 37.13115-.02594 7.83214 6.271 14.10306 14.07712 14.10306zM129.99592 239.60116H200.225c21.20663 0 38.43214-17.22551 38.43214-38.43214 0-7.07755-5.72449-12.82806-12.82806-12.82806H106.94184c-1.45715 0-2.55005 1.17091-2.55005 2.55v23.05408c-.02597 14.18112 11.47505 25.65612 25.60413 25.65612z"
+                      fill="#F7F7F7"
+                    ></path>
+                    <path
+                      d="M109.59592 139.3185l87.66275 87.66276c5.80255 5.80255 15.19592 5.80255 20.99847 0l15.19592-15.19592c5.80255-5.80255 5.80255-15.19591 0-20.99847l-87.63673-87.66275c-5.80255-5.80255-15.19592-5.80255-20.99847 0l-15.19592 15.19592c-5.8546 5.80255-5.8546 15.22194-.02602 20.99847z"
+                      fill="#F7F7F7"
+                    ></path>
+                    <path
+                      fill="#444"
+                      opacity=".3"
+                      d="M198.6898 228.46443l-51.4944-40.12347h11.39695zM144.35918 101.66698l40.56582 40.56581h13.7648z"
+                    ></path>
+                  </g>
+                </svg>
+                PodPro
+              </a>
+            </li>
+            <li>
+              <a href="https://podbrowser.inrupt.com/login">
+                <img
+                  src="https://podbrowser.inrupt.com/favicon.ico"
+                  height="38"
+                />
+                PodBrowser
+              </a>
+            </li>
+            <li>
+              <a href="https://penny.vincenttunru.com/">
+                <img
+                  src="https://penny.vincenttunru.com/favicon.ico"
+                  height="38"
+                />
+                Penny
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-  <footer>
-    <p class="badge"><a href="https://github.com/jeswr/Solid-MCR-May-2023">View on GitHub</a></p>
-    <p class="license">
-      ©2023 <a href="https://www.jeswr.org/#me">Jesse Wright</a> –
-      Except where otherwise noted,
-      the content of these slides is
-      licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>.
-    </p>
-  </footer>
-  <script src="scripts/shower.min.js"></script>
-</body>
+    <div class="slide" id="today-possibilities-app">
+      <h2>What can Solid do today?</h2>
+      <ul>
+        <li>
+          Web Apps
+          <ul>
+            <li>
+              <a href="https://www.bbc.co.uk/together">
+                <img src="/images/togetherPod.svg" height="40" />
+                BBC Together
+              </a>
+            </li>
+            <li>
+              <a href="https://noeldemartin.github.io/media-kraken/login">
+                <img
+                  src="https://noeldemartin.github.io/media-kraken/img/icons/apple-touch-icon-152x152.png"
+                  height="40"
+                />
+                Media Kraken
+              </a>
+            </li>
+            <li>
+              <a href="https://umai.noeldemartin.com/">
+                <img
+                  src="https://umai.noeldemartin.com/apple-touch-icon.png"
+                  height="40"
+                />
+                Umai
+              </a>
+            </li>
+            <li>
+              <a href="https://noeldemartin.github.io/solid-focus/">
+                <img
+                  src="https://noeldemartin.github.io/solid-focus/logo.svg"
+                  height="40"
+                />
+                Solid Focus
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="today-difficulties">
+      <h2>Where are some difficulties?</h2>
+      <ul>
+        <li>
+          Interoperability
+          <ul>
+            <li>
+              Applications cannot <i>understand</i> data written by other apps
+            </li>
+            <li>Applications cannot <i>find</i> data written by other apps</li>
+          </ul>
+        </li>
+        <li class="next">
+          Performance<br />
+          <ul>
+            <li>Apps struggle to work with "big data"</li>
+          </ul>
+        </li>
+        <li class="next">
+          <!-- Intentionally not elaborating on this one for now -->
+          Requesting & Automating authorisation
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="today-solutions-find">
+      <h2>What solutions can use to <i>find</i> data today?</h2>
+      <ul>
+        <li>
+          client-to-client standards
+          <ul>
+            <li>
+              <a href="https://github.com/solid/type-indexes">Type Indexes</a>
+            </li>
+            <li>Closed ecosystem assumptions</li>
+          </ul>
+        </li>
+        <li class="next">
+          brute-force discovery
+          <ul>
+            <li>
+              Pod-wide link-traversal
+              <ul>
+                <li>
+                  Use tools like
+                  <a
+                    href="https://github.com/comunica/comunica-feature-link-traversal"
+                    >Comunica</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  Optimize with services like the
+                  <a
+                    href="https://docs.inrupt.com/ess/latest/query/qpf-endpoint/"
+                    >ESS Fragments Indexer</a
+                  >
+                  (but don't rely on them)
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide borderlessSlide" id="noel-fosdem">
+      <video controls="controls" width="100%" height="100%">
+        <!-- TODO: Find where we actually want to start -->
+        <source
+          src="https://video.fosdem.org/2023/H.1301 (Cornil)/sovcloud_from_zero_to_hero_with_solid.webm#t=895,1000"
+          type='video/webm; codecs="vp9, opus"'
+        />
+      </video>
+    </div>
+
+    <div class="slide" id="today-solutions-understand">
+      <h2>What solutions can use to <i>understand</i> data today?</h2>
+      <ul>
+        <li>
+          client-to-client standards
+          <ul>
+            <li>
+              agree on <a href="https://github.com/jeswr/shapeRepo">shapes</a>
+            </li>
+            <!-- <li>Closed ecosystem assumptions</li> -->
+          </ul>
+        </li>
+        <li class="next">
+          advanced mode
+          <ul>
+            <li>
+              client-side
+              <a
+                href="https://rubenverborgh.github.io/WebFundamentals/semantic-web/#reasoning"
+                >reasoning</a
+              >
+              with:
+              <ul>
+                <li>
+                  <a href="https://github.com/eyereasoner/eye-js/">eye</a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/comunica/comunica-feature-reasoning"
+                    >N3.js</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/rdfjs/N3.js/pull/296">Comunica</a>
+                </li>
+              </ul>
+              <!-- <ul>
+                <li>
+                  Optimize with services like the
+                  <a
+                    href="https://docs.inrupt.com/ess/latest/query/qpf-endpoint/"
+                    >ESS Fragments Indexer</a
+                  >
+                  (but don't rely on them)
+                </li>
+              </ul> -->
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="what-are-shapes">
+      <a href="https://shex.io/">
+        <img
+          href="https://shex.io/"
+          class="right-align"
+          src="https://shex.io/logo/2.1/ShEx-Logo.svg"
+          alt="Solid Project"
+          height="100px"
+          style="float: right;"
+        />
+      </a>
+      <a href="https://w3c.github.io/shacl/shacl-compact-syntax/">
+        <img
+          href="https://w3c.github.io/shacl/shacl-compact-syntax/"
+          class="right-align"
+          src="https://www.w3.org/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo.svg"
+          alt="Solid Project"
+          height="100px"
+          style="float: right;"
+        />
+      </a>
+      <a href="https://www.w3.org/TR/shacl/">
+        <img
+          href="https://www.w3.org/TR/shacl/"
+          class="right-align"
+          src="https://cygri.github.io/rdf-logos/svg/shacl.svg"
+          alt="Solid Project"
+          height="100px"
+          style="float: right;"
+        />
+      </a>
+      <h2>What are shapes?</h2>
+      <code class="codecl">
+        <code>
+PREFIX <span style="color: rgb(61, 43, 226);">schema:</span> &lt;http://schema.org/&gt;<br />
+
+<span style="color: blueviolet;">shape</span> <span style="color: rgb(61, 43, 226);"><span style="color: rgb(61, 43, 226);"></span></span>&lt;#PostalAddress&gt; {<br />
+ &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>streetAddress <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
+ &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>addressLocality <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
+ &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>addressRegion <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
+ &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>addressCountry <span style="color: rgb(61, 43, 226);">schema:</span>Country [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
+ &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>postalCode <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <span style="color:lightblue;">pattern</span>=<span style="color:peru;">&quot;^\\d{5}(-\\d{4})?$&quot;</span> <br />
+}
+</code>
+</code>
+    </div>
+
+    <div class="slide" id="call-to-action">
+      <h2>How can you help today?</h2>
+      <ul>
+        <li>
+          Applications
+          <ul>
+            <li>Build them!</li>
+          </ul>
+        </li>
+        <li class="next">
+          Shapes
+          <ul>
+            <li>Build shapes</li>
+            <li>Share on a <a href="https://github.com/jeswr/shapeRepo">shapes repository</a></li>
+            <li>Reuse from an <a href="https://github.com/jeswr/shapeRepo">editable</a> or <a href="https://shaperepo.com/">read only</a> shape repository</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="slide" id="today-difficulties-revisited">
+      <h2>Which difficulties and we solve today?</h2>
+      <ul>
+        <li>
+          Interoperability
+          <ul>
+            <li>
+              Applications cannot <i>understand</i> data written by other apps
+            </li>
+            <li>Applications cannot <i>find</i> data written by other apps</li>
+          </ul>
+        </li>
+        <li class="next">
+          Performance<br />
+          <ul>
+            <li>Apps struggle to work with "big data"</li>
+          </ul>
+        </li>
+        <li class="next">
+          <!-- Intentionally not elaborating on this one for now -->
+          Requesting & Automating authorisation
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide borderlessSlide" id="questions">
+      <h2>
+        <!-- Questions? -->
+      </h2>
+      <ul>
+        <li>
+          Follow me on
+          <ul>
+            <li>
+              <a href="https://github.com/jeswr/" style="text-decoration: none">
+                <svg
+                  height="32"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  width="32"
+                  data-view-component="true"
+                  class="octicon octicon-mark-github v-align-middle"
+                >
+                  <path
+                    d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"
+                  ></path>
+                </svg>
+                jeswr</a
+              >
+            </li>
+            <li>
+              <a href="https://www.jeswr.org/" style="text-decoration: none">
+                <img
+                  src="https://avatars.githubusercontent.com/u/63333554?v=4"
+                  width="32"
+                />
+                jeswr.org</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://id.inrupt.com/jeswr"
+                style="text-decoration: none"
+              >
+                <img src="https://login.inrupt.com/favicon.ico" width="32" />
+                id.inrupt.com/jeswr</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://sfba.social/@jeswr"
+                style="text-decoration: none"
+              >
+                <img src="https://sfba.social/favicon.ico" width="32" />
+                @jeswr@sfba.social</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          Recommended Reading
+          <ul>
+            <li>
+              <a href="https://solidlabresearch.github.io/WhatsInAPod/">What’s in a Pod?</a>
+            </li>
+            <li>
+              <a href="https://ruben.verborgh.org/blog/2022/12/30/lets-talk-about-pods/">Let’s talk about pods</a>
+            </li>
+            <li>
+              <a href="https://ruben.verborgh.org/blog/2021/12/23/reflections-of-knowledge/">Reflections of knowledge</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p class="badge">
+        <a href="https://github.com/jeswr/Solid-MCR-May-2023">View on GitHub</a>
+      </p>
+      <p class="license">
+        ©2023 <a href="https://www.jeswr.org/#me">Jesse Wright</a> – Except
+        where otherwise noted, the content of these slides is licensed under
+        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"
+          >Creative Commons Attribution 4.0</a
+        >.
+      </p>
+    </footer>
+    <script src="scripts/shower.min.js"></script>
+  </body>
 </html>

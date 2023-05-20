@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bbc-together-logo-gradient</title>
+    <defs>
+        <linearGradient x1="0%" y1="64.175395%" x2="100%" y2="64.175395%" id="linearGradient-1">
+            <stop stop-color="#FFFF00" offset="0%"></stop>
+            <stop stop-color="#FF00AA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="bbc-together-logo-gradient" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="Icon">
+                <line x1="60.5" y1="77.92" x2="27.87" y2="95.98" id="Path" stroke="#FFCA00"></line>
+                <line x1="113.4" y1="33.18" x2="82.92" y2="61.38" id="Path" stroke="#FFCA00"></line>
+                <line x1="64.85" y1="82.76" x2="36.3" y2="128.33" id="Path" stroke="#FFCA00"></line>
+                <line x1="100.08" y1="10.81" x2="78.09" y2="58.14" id="Path" stroke="#FFCA00"></line>
+                <line x1="69.95" y1="84.96" x2="64.01" y2="127.53" id="Path" stroke="#FFCA00"></line>
+                <line x1="76.81" y1="16.87" x2="73.14" y2="57.14" id="Path" stroke="#FFCA00"></line>
+                <line x1="75.94" y1="84.91" x2="86.46" y2="135.97" id="Path" stroke="#FFCA00"></line>
+                <line x1="55.08" y1="6.94" x2="69.27" y2="57.59" id="Path" stroke="#FFCA00"></line>
+                <line x1="80.44" y1="83.04" x2="104.82" y2="118.24" id="Path" stroke="#FFCA00"></line>
+                <line x1="38.41" y1="22.34" x2="64.44" y2="59.93" id="Path" stroke="#FFCA00"></line>
+                <line x1="83.82" y1="79.99" x2="130.96" y2="112.65" id="Path" stroke="#FFCA00"></line>
+                <line x1="15.43" y1="42.99" x2="59.94" y2="65.62" id="Path" stroke="#FFCA00"></line>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="115.76" cy="30.54" r="4.22"></circle>
+                <circle id="Oval" fill="#00B45B" fill-rule="nonzero" cx="27.36" cy="96.14" r="5.62"></circle>
+                <circle id="Oval" fill="#D6DB00" fill-rule="nonzero" cx="99.99" cy="10.84" r="5.62"></circle>
+                <circle id="Oval" fill="#FFFF00" fill-rule="nonzero" cx="36.97" cy="128.37" r="4.22"></circle>
+                <circle id="Oval" fill="#FF00FF" fill-rule="nonzero" cx="76.73" cy="16.93" r="4.22"></circle>
+                <circle id="Oval" fill="#00BB00" fill-rule="nonzero" cx="64.3" cy="127.44" r="5.62"></circle>
+                <circle id="Oval" fill="#D60000" fill-rule="nonzero" cx="55.03" cy="7.03" r="7.03"></circle>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="86.7" cy="135.78" r="4.22"></circle>
+                <circle id="Oval" fill="#FFFF00" fill-rule="nonzero" cx="38.39" cy="22.45" r="4.22"></circle>
+                <circle id="Oval" fill="#00E6FF" fill-rule="nonzero" cx="130.82" cy="112.02" r="7.03"></circle>
+                <circle id="Oval" fill="#FF00C8" fill-rule="nonzero" cx="104.98" cy="117.99" r="5.62"></circle>
+                <circle id="Oval" fill="#D400F4" fill-rule="nonzero" cx="15.45" cy="43.1" r="5.62"></circle>
+                <line x1="59.07" y1="71.66" x2="6.42" y2="71.66" id="Path" stroke="#FFBB00"></line>
+                <circle id="Oval" fill="#D6DB00" fill-rule="nonzero" cx="7.03" cy="71.72" r="7.03"></circle>
+            </g>
+            <g id="Icon-Copy">
+                <g id="Group-2" transform="translate(6.420000, 6.940000)">
+                    <line x1="54.08" y1="70.98" x2="21.45" y2="89.04" id="Path" stroke="#FFCA00"></line>
+                    <line x1="106.98" y1="26.24" x2="76.5" y2="54.44" id="Path" stroke="#FFCA00"></line>
+                    <line x1="58.43" y1="75.82" x2="29.88" y2="121.39" id="Path" stroke="#FFCA00"></line>
+                    <line x1="93.66" y1="3.87" x2="71.67" y2="51.2" id="Path" stroke="#FFCA00"></line>
+                    <line x1="63.53" y1="78.02" x2="57.59" y2="120.59" id="Path" stroke="#FFCA00"></line>
+                    <line x1="70.39" y1="9.93" x2="66.72" y2="50.2" id="Path" stroke="#FFCA00"></line>
+                    <line x1="69.52" y1="77.97" x2="80.04" y2="129.03" id="Path" stroke="#FFCA00"></line>
+                    <line x1="48.66" y1="7.10542736e-15" x2="62.85" y2="50.65" id="Path" stroke="#FFCA00"></line>
+                    <line x1="74.02" y1="76.1" x2="98.4" y2="111.3" id="Path" stroke="#FFCA00"></line>
+                    <line x1="31.99" y1="15.4" x2="58.02" y2="52.99" id="Path" stroke="#FFCA00"></line>
+                    <line x1="77.4" y1="73.05" x2="124.54" y2="105.71" id="Path" stroke="#FFCA00"></line>
+                    <line x1="9.01" y1="36.05" x2="53.52" y2="58.68" id="Path" stroke="#FFCA00"></line>
+                    <line x1="52.65" y1="64.72" x2="3.55271368e-15" y2="64.72" id="Path" stroke="#FFBB00"></line>
+                </g>
+                <g id="Group" fill-rule="nonzero">
+                    <circle id="Oval" fill="#FFFFFF" cx="115.76" cy="30.54" r="4.22"></circle>
+                    <circle id="Oval" fill="#00B45B" cx="27.36" cy="96.14" r="5.62"></circle>
+                    <circle id="Oval" fill="#D6DB00" cx="99.99" cy="10.84" r="5.62"></circle>
+                    <circle id="Oval" fill="#FFFF00" cx="36.97" cy="128.37" r="4.22"></circle>
+                    <circle id="Oval" fill="#FF00FF" cx="76.73" cy="16.93" r="4.22"></circle>
+                    <circle id="Oval" fill="#00BB00" cx="64.3" cy="127.44" r="5.62"></circle>
+                    <circle id="Oval" fill="#D60000" cx="55.03" cy="7.03" r="7.03"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="86.7" cy="135.78" r="4.22"></circle>
+                    <circle id="Oval" fill="#FFFF00" cx="38.39" cy="22.45" r="4.22"></circle>
+                    <circle id="Oval" fill="#00E6FF" cx="130.82" cy="112.02" r="7.03"></circle>
+                    <circle id="Oval" fill="#FF00C8" cx="104.98" cy="117.99" r="5.62"></circle>
+                    <circle id="Oval" fill="#D400F4" cx="15.45" cy="43.1" r="5.62"></circle>
+                    <circle id="Oval" fill="#D6DB00" cx="7.03" cy="71.72" r="7.03"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
