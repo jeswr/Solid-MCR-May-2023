@@ -32,7 +32,7 @@
           src="https://solidproject.org/assets/img/solid-emblem.svg"
           alt="Solid Project"
           width="25%"
-          style="float: right;"
+          style="float: right"
         />
       </a>
       <h2>On the horizon:</h2>
@@ -101,7 +101,47 @@
       </ul>
     </div>
 
+    <div class="slide" id="overview">
+      <!-- <h2>What is Solid today?</h2> -->
+      <h2>Overview</h2>
+      <ul>
+        <li>
+          <img src="./images/solid-2.svg" width="45px" style="float: right" />
+          Solid Today
+        </li>
+        <li>
+          <img
+            src="./images/solid-3.svg"
+            width="45px"
+            style="float: right"
+          />Solid views: Towards Solid as a contextual KG
+        </li>
+        <li>
+          <img
+            src="./images/solid-4.svg"
+            width="45px"
+            style="float: right"
+          />Back(door) to the future: Extension APIs for Solid
+        </li>
+        <li>
+          <img
+            src="./images/solid-5.svg"
+            width="45px"
+            style="float: right"
+          />Solidifying Solid: Standardising extension APIs
+        </li>
+        <li>
+          <img
+            src="./images/solid-6.svg"
+            width="45px"
+            style="float: right"
+          />The logical conclusion: A Web of Rules and Data
+        </li>
+      </ul>
+    </div>
+
     <div class="slide" id="today">
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
       <!-- <h2>What is Solid today?</h2> -->
       <h2>A Solid foundation: What do we have today?</h2>
       <ul>
@@ -127,6 +167,7 @@
     </div>
 
     <div class="slide" id="today-possibilities-browser">
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
       <h2>What can Solid do today?</h2>
       <ul>
         <li>
@@ -203,6 +244,7 @@
     </div>
 
     <div class="slide" id="today-possibilities-app">
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
       <h2>What can Solid do today?</h2>
       <ul>
         <li>
@@ -247,6 +289,7 @@
     </div>
 
     <div class="slide" id="today-difficulties">
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
       <h2>Where are some difficulties?</h2>
       <ul>
         <li>
@@ -266,12 +309,13 @@
         </li>
         <li class="next">
           <!-- Intentionally not elaborating on this one for now -->
-          Requesting & Automating authorisation
+          Requesting & automating authorisation
         </li>
       </ul>
     </div>
 
     <div class="slide" id="today-solutions-find">
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
       <h2>What solutions can use to <i>find</i> data today?</h2>
       <ul>
         <li>
@@ -324,6 +368,7 @@
     </div>
 
     <div class="slide" id="today-solutions-understand">
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
       <h2>What solutions can use to <i>understand</i> data today?</h2>
       <ul>
         <li>
@@ -383,7 +428,7 @@
           src="https://shex.io/logo/2.1/ShEx-Logo.svg"
           alt="Solid Project"
           height="100px"
-          style="float: right;"
+          style="float: right"
         />
       </a>
       <a href="https://w3c.github.io/shacl/shacl-compact-syntax/">
@@ -393,7 +438,7 @@
           src="https://www.w3.org/community/src/templates/wordpress/StoryTeller/img/svg/cgbg-logo.svg"
           alt="Solid Project"
           height="100px"
-          style="float: right;"
+          style="float: right"
         />
       </a>
       <a href="https://www.w3.org/TR/shacl/">
@@ -403,26 +448,66 @@
           src="https://cygri.github.io/rdf-logos/svg/shacl.svg"
           alt="Solid Project"
           height="100px"
-          style="float: right;"
+          style="float: right"
         />
       </a>
       <h2>What are shapes?</h2>
       <code class="codecl">
         <code>
-PREFIX <span style="color: rgb(61, 43, 226);">schema:</span> &lt;http://schema.org/&gt;<br />
+          PREFIX
+          <span style="color: rgb(61, 43, 226)">schema:</span>
+          &lt;http://schema.org/&gt;<br />
 
-<span style="color: blueviolet;">shape</span> <span style="color: rgb(61, 43, 226);"><span style="color: rgb(61, 43, 226);"></span></span>&lt;#PostalAddress&gt; {<br />
- &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>streetAddress <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
- &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>addressLocality <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
- &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>addressRegion <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
- &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>addressCountry <span style="color: rgb(61, 43, 226);">schema:</span>Country [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <br />
- &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226);">schema:</span>postalCode <span style="color: rgb(61, 43, 226);">schema:</span>Text [<span style="color: rgb(138, 119, 34);">1</span>..<span style="color: rgb(138, 119, 34);">1</span>] <span style="color:lightblue;">pattern</span>=<span style="color:peru;">&quot;^\\d{5}(-\\d{4})?$&quot;</span> <br />
-}
-</code>
-</code>
+          <span style="color: blueviolet">shape</span>
+          <span style="color: rgb(61, 43, 226)"
+            ><span style="color: rgb(61, 43, 226)"></span></span
+          >&lt;#PostalAddress&gt; {<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226)"
+            >schema:</span
+          >streetAddress
+          <span style="color: rgb(61, 43, 226)">schema:</span>Text [<span
+            style="color: rgb(138, 119, 34)"
+            >1</span
+          >..<span style="color: rgb(138, 119, 34)">1</span>] <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226)"
+            >schema:</span
+          >addressLocality
+          <span style="color: rgb(61, 43, 226)">schema:</span>Text [<span
+            style="color: rgb(138, 119, 34)"
+            >1</span
+          >..<span style="color: rgb(138, 119, 34)">1</span>] <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226)"
+            >schema:</span
+          >addressRegion
+          <span style="color: rgb(61, 43, 226)">schema:</span>Text [<span
+            style="color: rgb(138, 119, 34)"
+            >1</span
+          >..<span style="color: rgb(138, 119, 34)">1</span>] <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226)"
+            >schema:</span
+          >addressCountry
+          <span style="color: rgb(61, 43, 226)">schema:</span>Country [<span
+            style="color: rgb(138, 119, 34)"
+            >1</span
+          >..<span style="color: rgb(138, 119, 34)">1</span>] <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(61, 43, 226)"
+            >schema:</span
+          >postalCode <span style="color: rgb(61, 43, 226)">schema:</span>Text
+          [<span style="color: rgb(138, 119, 34)">1</span>..<span
+            style="color: rgb(138, 119, 34)"
+            >1</span
+          >] <span style="color: lightblue">pattern</span>=<span
+            style="color: peru"
+            >&quot;^\\d{5}(-\\d{4})?$&quot;</span
+          >
+          <br />
+          }
+        </code>
+      </code>
     </div>
 
     <div class="slide" id="call-to-action">
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
       <h2>How can you help today?</h2>
       <ul>
         <li>
@@ -435,42 +520,348 @@ PREFIX <span style="color: rgb(61, 43, 226);">schema:</span> &lt;http://schema.o
           Shapes
           <ul>
             <li>Build shapes</li>
-            <li>Share on a <a href="https://github.com/jeswr/shapeRepo">shapes repository</a></li>
-            <li>Reuse from an <a href="https://github.com/jeswr/shapeRepo">editable</a> or <a href="https://shaperepo.com/">read only</a> shape repository</li>
+            <li>
+              Share on a
+              <a href="https://github.com/jeswr/shapeRepo">shapes repository</a>
+            </li>
+            <li>
+              Reuse from an
+              <a href="https://github.com/jeswr/shapeRepo">editable</a> or
+              <a href="https://shaperepo.com/">read only</a> shape repository
+            </li>
           </ul>
         </li>
       </ul>
     </div>
 
-
     <div class="slide" id="today-difficulties-revisited">
-      <h2>Which difficulties and we solve today?</h2>
+      <img src="./images/solid-2.svg" width="45px" style="float: left;" />
+      <h2>Which difficulties can we solve today?</h2>
+      <ul>
+        <li>
+          <svg height="20" width="20">
+            <circle cx="8" cy="10" r="8" stroke-width="3" fill="orange" />
+          </svg>
+          Interoperability
+          <ul>
+            <li>
+              For <i>finding</i> data we have type-indexes, but they can be
+              corrupted as they are client-maintained
+            </li>
+            <li>
+              For <i>understanding</i> data we can agree to use the same shapes;
+              but we do not access the power of RDF semantics
+            </li>
+          </ul>
+        </li>
+        <li class="next">
+          <svg height="20" width="20">
+            <circle cx="8" cy="10" r="8" stroke-width="3" fill="red" />
+          </svg>
+          Performance<br />
+          <ul>
+            <!-- <li>Apps struggle to work with "big data"</li> -->
+          </ul>
+        </li>
+        <li class="next">
+          <svg height="20" width="20">
+            <circle cx="8" cy="10" r="8" stroke-width="3" fill="red" />
+          </svg>
+          <!-- Intentionally not elaborating on this one for now -->
+          Requesting & automating authorisation
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="on-the-horizon">
+      <img src="./images/solid-3.svg" width="45px" style="float: left;" />
+      <h2>Whats on the horizon?</h2>
       <ul>
         <li>
           Interoperability
           <ul>
             <li>
-              Applications cannot <i>understand</i> data written by other apps
+              Data <i>views</i> such as
+              <ul>
+                <li>a <i>server managed</i> type index</li>
+                <li><i>virtualising</i> data by shape</li>
+                <!-- <li>For <i>finding</i> data we have type-indexes, but they can be corrupted as they are client-maintained</li> -->
+                <!-- <li>For <i>understanding</i> data we can agree to use the same shapes; but we do not access the power of RDF semantics</li> -->
+              </ul>
             </li>
-            <li>Applications cannot <i>find</i> data written by other apps</li>
+            <!-- <li>For <i>finding</i> data we have type-indexes, but they can be corrupted as they are client-maintained</li> -->
+            <!-- <li>For <i>understanding</i> data we can agree to use the same shapes; but we do not access the power of RDF semantics</li> -->
           </ul>
         </li>
         <li class="next">
           Performance<br />
           <ul>
-            <li>Apps struggle to work with "big data"</li>
+            <li>Data <i>views</i> for query optimization</li>
           </ul>
         </li>
         <li class="next">
           <!-- Intentionally not elaborating on this one for now -->
-          Requesting & Automating authorisation
+          Requesting & automating authorisation
+          <ul>
+            <li>
+              Auxilliary resource <i>views</i> on "interesting" policies
+              <!-- a <i>server managed</i> type index -->
+            </li>
+            <!-- <li>For <i>finding</i> data we have type-indexes, but they can be corrupted as they are client-maintained</li> -->
+            <!-- <li>For <i>understanding</i> data we can agree to use the same shapes; but we do not access the power of RDF semantics</li> -->
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="what-are-views-short-term">
+      <img src="./images/solid-3.svg" width="45px" style="float: left;" />
+      <h2>What are these views of?</h2>
+      <ul>
+        <li>
+          Short term
+          <ul>
+            <li>The LDP storage</li>
+          </ul>
+          <img
+            class="right-align"
+            src="https://ruben.verborgh.org/images/blog/document-centric-model.svg"
+            alt="Pod to Secondary APISs"
+            width="60%"
+            style="float: bottom"
+          />
+        </li>
+        <!-- <li>
+          Long term
+          <ul>
+            <li>
+              <a href="https://solidlabresearch.github.io/WhatsInAPod/">
+                A Hybrid-Contextualised Knowledge Graph
+              </a> containing:
+              <ul>
+                <li>
+                  Application Data
+                </li>
+                <li>
+                  Provenance (metadata)
+                </li>
+                <li>
+                  Policies
+                </li>
+                <li>
+                  Rules
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+
+    <div class="slide" id="what-are-views-long-term">
+      <img src="./images/solid-4.svg" width="45px" style="float: left;" />
+      <h2>What are these views of?</h2>
+      <ul>
+        <!-- <img
+        class="right-align"
+        src="https://ruben.verborgh.org/images/blog/document-centric-model.svg"
+        alt="Pod to Secondary APISs"
+        width="60%"
+        style="float: right;"
+      />
+        <li>
+          Short term
+          <ul>
+            <li>
+              The LDP storage
+            </li>
+          </ul>
+        </li> -->
+        <li>
+          Long term
+          <ul>
+            <li>
+              <a href="https://solidlabresearch.github.io/WhatsInAPod/">
+                A Hybrid-Contextualised Knowledge Graph
+              </a>
+              containing:
+              <ul>
+                <li>Application Data</li>
+                <li>Provenance (metadata)</li>
+                <li>Policies</li>
+                <li>Rules</li>
+              </ul>
+            </li>
+          </ul>
+          <img
+            class="right-align"
+            src="https://ruben.verborgh.org/images/blog/graph-centric-model.svg"
+            alt="Pod to Secondary APISs"
+            width="60%"
+            style="float: bottom"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="seamless-transition">
+      <!-- TODO: Clean this up -->
+      <h2>A seamless transition</h2>
+      <img src="./images/solid-3.svg" height="300px" style="float: left;" />
+      <img src="./images/right-arrow.png" height="300px" />
+      <img src="./images/solid-4.svg" height="300px" style="float: right;" />
+    </div>
+
+    <div class="slide" id="data-integration">
+      <img src="./images/solid-4.svg" width="45px" style="float: left;" />
+      <h2>A seamless transition</h2>
+      <ul>
+        <li>
+          Data integration <i>not</i> API integration
+          <ul>
+            <li>
+              <a
+                href="https://ruben.verborgh.org/blog/2021/12/23/reflections-of-knowledge/"
+                >Reflections of knowledge</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Your LDP API will still work!
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="extensions">
+      <img src="./images/solid-4.svg" width="45px" style="float: left;" />
+      <h2>Back(door) to the future: Extension APIs for Solid</h2>
+      <ul>
+        <li>
+          Policy APIs such as:
+          <ul>
+            <li>
+              Retention periods
+            </li>
+            <li>
+              Access Grants
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Reasoning APIs:
+          <ul>
+            <li>
+              Shape/vocab alignment
+            </li>
+            <li>
+              Domain inference
+            </li>
+            <li>
+              Custom rules
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="slide" id="solidifying">
+      <img src="./images/solid-5.svg" width="45px" style="float: left;" />
+      <h2>Solidifying Solid: Standardising extension APIs</h2>
+      <!-- <ul>
+        <li>
+          Policy APIs such as:
+          <ul>
+            <li>
+              Retention periods
+            </li>
+            <li>
+              Access Grants
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Reasoning APIs:
+          <ul>
+            <li>
+              Shape/vocab alignment
+            </li>
+            <li>
+              Domain inference<ul>
+        <li>
+          Policy APIs such as:
+          <ul>
+            <li>
+              Retention periods
+            </li>
+            <li>
+              Access Grants
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          Reasoning APIs:
+          <ul>
+            <li>
+              Shape/vocab alignment
+            </li>
+            <li>
+              Domain inference
+            </li>
+            <li>
+              Custom rules
+            </li>
+          </ul>
+        </li>
+      </ul>
+            </li>
+            <li>
+              Custom rules
+            </li>
+          </ul>
+        </li>
+      </ul> -->
+    </div>
+
+    <div class="slide" id="dialogue">
+      <img src="./images/solid-6.svg" width="45px" style="float: left;" />
+      <h2>The logical conclusion: A Web of Rules and Data</h2>
+      <ul>
+        <li>
+          No application logic
+        </li>
+        <li>
+          No code
+        </li>
+        <li>
+          Just a reasoning dialogue
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="slide" id="remember">
+      <h2>If you have one takeaway...</h2>
+      <ul>
+        <li>
+          Build apps and 
+          
+          <a href="https://github.com/jeswr/shapeRepo">
+            shapes
+          </a>
+          
+          today!
         </li>
       </ul>
     </div>
 
     <div class="slide borderlessSlide" id="questions">
       <h2>
-        <!-- Questions? -->
+        Questions?
       </h2>
       <ul>
         <li>
@@ -527,13 +918,21 @@ PREFIX <span style="color: rgb(61, 43, 226);">schema:</span> &lt;http://schema.o
           Recommended Reading
           <ul>
             <li>
-              <a href="https://solidlabresearch.github.io/WhatsInAPod/">What’s in a Pod?</a>
+              <a href="https://solidlabresearch.github.io/WhatsInAPod/"
+                >What’s in a Pod?</a
+              >
             </li>
             <li>
-              <a href="https://ruben.verborgh.org/blog/2022/12/30/lets-talk-about-pods/">Let’s talk about pods</a>
+              <a
+                href="https://ruben.verborgh.org/blog/2022/12/30/lets-talk-about-pods/"
+                >Let’s talk about pods</a
+              >
             </li>
             <li>
-              <a href="https://ruben.verborgh.org/blog/2021/12/23/reflections-of-knowledge/">Reflections of knowledge</a>
+              <a
+                href="https://ruben.verborgh.org/blog/2021/12/23/reflections-of-knowledge/"
+                >Reflections of knowledge</a
+              >
             </li>
           </ul>
         </li>
